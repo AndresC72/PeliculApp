@@ -1,0 +1,35 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Lista de peliculas</h1>
+      <table class="table table-hover table-bordered table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo:</th>
+            <th scope="col">Descripcion:</th>
+            <th scope="col">Duracion</th>
+            <th scope="col">trailer</th>
+            <th scope="col"> fecha</th>
+            <th scope="col">caratula</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let pelicula of peliculas; let item=index">
+           <th scope="row">{{item+1}}</th>
+           <td>{{pelicula.title}}</td>
+           <td>{{pelicula.descriptions</td>
+           <td>{{pelicula.duracion}</td>
+           <td>{{pelicula.trailer}</td>
+           <td>{{pelicula.fecha}</td>
+           <td>{{pelicula.caratula}</td>
+         </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
